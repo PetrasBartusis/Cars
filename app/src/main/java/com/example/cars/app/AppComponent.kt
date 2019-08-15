@@ -2,6 +2,8 @@ import android.app.Application
 import com.example.cars.utils.activity.ActivityModule
 import com.example.cars.utils.network.ApiModule
 import com.example.cars.app.BaseApplication
+import com.example.cars.utils.scheduler.SchedulerModule
+import com.example.cars.utils.storage.RepositoriesModule
 import com.example.cars.utils.viewmodel.ViewModelModule
 import dagger.BindsInstance
 import dagger.Component
@@ -13,6 +15,8 @@ import javax.inject.Singleton
         ApiModule::class,
         ViewModelModule::class,
         ActivityModule::class,
+        RepositoriesModule::class,
+        SchedulerModule::class,
         AndroidSupportInjectionModule::class]
 )
 @Singleton
