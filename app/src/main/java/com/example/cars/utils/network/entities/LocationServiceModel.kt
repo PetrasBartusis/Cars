@@ -14,11 +14,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Reservation (
-	@SerializedName("initialPrice") val initialPrice : Int,
-	@SerializedName("initialMinutes") val initialMinutes : Int,
-	@SerializedName("extensionPrice") val extensionPrice : Int,
-	@SerializedName("extensionMinutes") val extensionMinutes : Int,
-	@SerializedName("longerExtensionPrice") val longerExtensionPrice : Int,
-	@SerializedName("longerExtensionMinutes") val longerExtensionMinutes : Int
+data class LocationServiceModel (
+	@SerializedName("id") val id : Int?,
+	@SerializedName("latitude") val latitude : Double?,
+	@SerializedName("longitude") val longitude : Double?,
+	@SerializedName("address") val address : String?
 )

@@ -14,9 +14,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Location (
-	@SerializedName("id") val id : Int,
-	@SerializedName("latitude") val latitude : Double,
-	@SerializedName("longitude") val longitude : Double,
-	@SerializedName("address") val address : String
+data class LeaseServiceModel (
+    @SerializedName("workdays") val workdays : WorkdaysServiceModel?,
+    @SerializedName("weekends") val weekends : WeekendsServiceModel?,
+    @SerializedName("kilometerPrice") val kilometerPrice : Double?,
+    @SerializedName("freeKilometersPerDay") val freeKilometersPerDay : Int?,
+    @SerializedName("servicePlusBatteryMaxKm") val servicePlusBatteryMaxKm : Int?,
+    @SerializedName("servicePlusBatteryMinKm") val servicePlusBatteryMinKm : Int?,
+    @SerializedName("servicePlusEGoPoints") val servicePlusEGoPoints : Int?
 )

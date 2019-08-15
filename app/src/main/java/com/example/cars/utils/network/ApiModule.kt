@@ -10,7 +10,6 @@ import okhttp3.OkHttpClient
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
-import okhttp3.Cache
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit
 
@@ -22,8 +21,7 @@ class ApiModule {
 
     @Provides
     @Singleton
-    internal fun provideOkhttpClient(cache: Cache): OkHttpClient = OkHttpClient.Builder()
-        .cache(cache)
+    internal fun provideOkhttpClient(): OkHttpClient = OkHttpClient.Builder()
         .connectTimeout(30, TimeUnit.SECONDS)
         .readTimeout(30, TimeUnit.SECONDS)
         .addInterceptor(HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))

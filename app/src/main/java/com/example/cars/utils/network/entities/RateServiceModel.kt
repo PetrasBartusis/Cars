@@ -14,9 +14,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class CarModel (
-	@SerializedName("id") val id : Int,
-	@SerializedName("title") val title : String,
-	@SerializedName("photoUrl") val photoUrl : String,
-	@SerializedName("rate") val rate : Rate
+data class RateServiceModel (
+    @SerializedName("isWeekend") val isWeekend : Boolean?,
+    @SerializedName("currency") val currency : String?,
+    @SerializedName("currencySymbol") val currencySymbol : String?,
+    @SerializedName("lease") val lease : LeaseServiceModel?,
+    @SerializedName("reservation") val reservation : ReservationServiceModel?
 )
