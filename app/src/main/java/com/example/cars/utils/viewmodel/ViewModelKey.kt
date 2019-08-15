@@ -1,6 +1,5 @@
 package com.example.cars.utils.viewmodel
 
-import androidx.lifecycle.ViewModel
 import dagger.MapKey
 import kotlin.reflect.KClass
 
@@ -8,4 +7,4 @@ import kotlin.reflect.KClass
     AnnotationTarget.PROPERTY_GETTER,
     AnnotationTarget.PROPERTY_SETTER)
 @MapKey
-annotation class ViewModelKey(val value: KClass<out ViewModel>)
+annotation class ViewModelKey(val value: KClass<out BaseViewModel>)
