@@ -14,10 +14,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Rate (
-	@SerializedName("isWeekend") val isWeekend : Boolean,
-	@SerializedName("currency") val currency : String,
-	@SerializedName("currencySymbol") val currencySymbol : String,
-	@SerializedName("lease") val lease : Lease,
-	@SerializedName("reservation") val reservation : Reservation
+data class ReservationServiceModel (
+	@SerializedName("initialPrice") val initialPrice : Int?,
+	@SerializedName("initialMinutes") val initialMinutes : Int?,
+	@SerializedName("extensionPrice") val extensionPrice : Int?,
+	@SerializedName("extensionMinutes") val extensionMinutes : Int?,
+	@SerializedName("longerExtensionPrice") val longerExtensionPrice : Int?,
+	@SerializedName("longerExtensionMinutes") val longerExtensionMinutes : Int?
 )

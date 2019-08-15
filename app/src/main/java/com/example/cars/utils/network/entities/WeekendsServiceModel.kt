@@ -14,12 +14,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Lease (
-	@SerializedName("workdays") val workdays : Workdays,
-	@SerializedName("weekends") val weekends : Weekends,
-	@SerializedName("kilometerPrice") val kilometerPrice : Int,
-	@SerializedName("freeKilometersPerDay") val freeKilometersPerDay : Int,
-	@SerializedName("servicePlusBatteryMaxKm") val servicePlusBatteryMaxKm : Int,
-	@SerializedName("servicePlusBatteryMinKm") val servicePlusBatteryMinKm : Int,
-	@SerializedName("servicePlusEGoPoints") val servicePlusEGoPoints : Int
+data class WeekendsServiceModel (
+	@SerializedName("amount") val amount : Double?,
+	@SerializedName("minutes") val minutes : Int?,
+	@SerializedName("dailyAmount") val dailyAmount : Int?,
+	@SerializedName("minimumPrice") val minimumPrice : Double?,
+	@SerializedName("minimumMinutes") val minimumMinutes : Int?
 )

@@ -14,10 +14,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class Weekends (
-	@SerializedName("amount") val amount : Double,
-	@SerializedName("minutes") val minutes : Int,
-	@SerializedName("dailyAmount") val dailyAmount : Int,
-	@SerializedName("minimumPrice") val minimumPrice : Double,
-	@SerializedName("minimumMinutes") val minimumMinutes : Int
+data class WorkdaysServiceModel (
+	@SerializedName("amount") val amount : Double?,
+	@SerializedName("minutes") val minutes : Int?,
+	@SerializedName("dailyAmount") val dailyAmount : Int?,
+	@SerializedName("minimumPrice") val minimumPrice : Double?,
+	@SerializedName("minimumMinutes") val minimumMinutes : Int?
 )
