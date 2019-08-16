@@ -38,6 +38,6 @@ class ApiModule {
 
     @Provides
     @Singleton
-    internal fun provideMovieApiService(retrofit: Retrofit): CarsService = retrofit
-        .create<CarsService>(CarsService::class.java)
+    internal fun provideMovieApiService(retrofit: Retrofit): CarsApi = retrofit
+        .create<CarsApi>(CarsApi::class.java)
 }
