@@ -34,6 +34,12 @@ class MapFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         mapView.onCreate(savedInstanceState)
         requestLocationPermissions()
+        viewModel.showMessage().observe(this, Observer { message ->
+            activity?.showMessage(message)
+        })
+        viewModel.zoomListener().observe(this, Observer { location ->
+            zoomToLocation(location)
+        })
     }
 
     private fun requestLocationPermissions() {
