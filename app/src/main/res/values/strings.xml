@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Cars</string>
     <string name="car_list_toolbar_title">Car List</string>
+    <string name="car_map_toolbar_title">Car Map</string>
     <string name="empty_car_list_message">Car List Is Empty</string>
 </resources>
