@@ -1,6 +1,10 @@
 package com.example.cars.carlist
 
 import com.example.cars.entities.CarModel
+import com.example.cars.utils.network.entities.CarServiceModel
+import com.example.cars.utils.network.entities.LocationServiceModel
+import com.example.cars.utils.network.entities.ModelServiceModel
+import com.example.cars.utils.network.entities.RateServiceModel
 
 class CarsMock {
     companion object {
