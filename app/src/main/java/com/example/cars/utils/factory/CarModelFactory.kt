@@ -16,7 +16,9 @@ class CarModelFactory @Inject constructor() {
                 latitude = carServiceModel.location.latitude,
                 longitude = carServiceModel.location.longitude,
                 address = carServiceModel.location.address
-            )
+            ),
+            plateNumber = carServiceModel.plateNumber ?: "",
+            remainingBattery = carServiceModel.batteryPrecentage ?: 0
         )
     }
 }
