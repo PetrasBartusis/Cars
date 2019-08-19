@@ -41,6 +41,12 @@ class MapFragment : BaseFragment() {
         viewModel.zoomListener().observe(this, Observer { location ->
             zoomToLocation(location)
         })
+        toolbar.apply {
+            setNavigationIcon(R.drawable.ic_menu)
+            setNavigationOnClickListener {
+                requireActivity().openDrawer()
+            }
+        }
     }
 
     private fun requestLocationPermissions() {

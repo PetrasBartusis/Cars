@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.cars.R
+import com.example.cars.utils.activity.openDrawer
 import com.example.cars.utils.activity.showMessage
 import com.example.cars.utils.fragment.BaseFragment
 import com.example.cars.utils.image.ImageLoader
@@ -52,6 +53,12 @@ class CarListFragment: BaseFragment(), SwipeRefreshLayout.OnRefreshListener {
             layoutManager = LinearLayoutManager(requireContext())
         }
         swipeRefreshLayout.setOnRefreshListener(this)
+        toolbar.apply {
+            setNavigationIcon(R.drawable.ic_menu)
+            setNavigationOnClickListener {
+                requireActivity().openDrawer()
+            }
+        }
         viewModel.onAttach()
     }
 
