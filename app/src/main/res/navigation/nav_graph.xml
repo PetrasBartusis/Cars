@@ -2,7 +2,15 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/nav_graph"
-            app:startDestination="@id/mapFragment">
-    <fragment android:id="@+id/mapFragment" android:name="com.example.cars.map.MapFragment"
-              android:label="MapFragment"/>
+    app:startDestination="@id/carListFragment">
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.example.cars.carslist.CarListFragment"
+        android:label="CarListFragment" >
+        <action android:id="@+id/action_carListFragment_to_mapFragment" app:destination="@id/mapFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.cars.map.MapFragment"
+        android:label="MapFragment" />
 </navigation>
