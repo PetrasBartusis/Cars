@@ -63,8 +63,9 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.0.1'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.0.1'
 
-    implementation "androidx.navigation:navigation-fragment-ktx:2.1.0-beta02"
-    implementation "androidx.navigation:navigation-ui-ktx:2.1.0-beta02"
+    // Kotlin
+    implementation "androidx.navigation:navigation-fragment-ktx:2.2.0-alpha01"
+    implementation "androidx.navigation:navigation-ui-ktx:2.2.0-alpha01"
 
     ext.mockito_version = '2.25.1'
     testImplementation "org.mockito:mockito-core:$mockito_version"
