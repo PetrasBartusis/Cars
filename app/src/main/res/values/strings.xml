@@ -4,4 +4,6 @@
     <string name="car_map_toolbar_title">Car Map</string>
     <string name="empty_car_list_message">Car List Is Empty</string>
     <string name="remaining_battery_text">&#37; of battery left</string>
+    <string name="car_list_menu_text">Car List</string>
+    <string name="car_map_menu_text">Car Map</string>
 </resources>
