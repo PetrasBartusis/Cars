@@ -6,4 +6,13 @@
     <string name="remaining_battery_text">&#37; of battery left</string>
     <string name="car_list_menu_text">Car List</string>
     <string name="car_map_menu_text">Car Map</string>
+    <string name="menu_button_filter">Filter</string>
+    <string name="checkbox_text_match_distance_from_user">Match Distance From User</string>
+    <string name="filter_dialog_title_text">Filter Car List</string>
+    <string name="filter_cars_by_plate_number_text">Filter By PlateNumber</string>
+    <string name="filter_cars_by_remaining_battery_text">Filter By Remaining Battery</string>
+    <string name="filter_cars_by_user_location_text">Filter By User Location</string>
+    <string name="filter_dialog_button_filter">Filter</string>
+    <string name="filter_dialog_button_cancel">Cancel</string>
+
 </resources>
