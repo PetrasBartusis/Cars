@@ -7,6 +7,7 @@ import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.cars.R
+import com.example.cars.utils.activity.openDrawer
 import com.example.cars.utils.activity.showMessage
 import com.example.cars.utils.fragment.BaseFragment
 import com.example.cars.utils.permissions.PermissionChecker
@@ -40,6 +41,12 @@ class MapFragment : BaseFragment() {
         viewModel.zoomListener().observe(this, Observer { location ->
             zoomToLocation(location)
         })
+        toolbar.apply {
+            setNavigationIcon(R.drawable.ic_menu)
+            setNavigationOnClickListener {
+                requireActivity().openDrawer()
+            }
+        }
     }
 
     private fun requestLocationPermissions() {
