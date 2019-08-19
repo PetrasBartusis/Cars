@@ -1,4 +1,4 @@
-package com.example.cars.utils.dialog
+package com.example.cars.utils.dialog.filter
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,7 +15,8 @@ class FilterLayout(context: Context?, attrs: AttributeSet?) : LinearLayout(conte
     val value
         get() = FilterOptions(
                 plateNumberFilter = plateNumberFilterText.text?.toString() ?: "",
-                remainingBatteryFilter = remainingBatteryFilterText.text?.toString()?.toIntOrNull() ?: 0,
+                remainingBatteryFilter = remainingBatteryFilterText.text?.toString()?.toIntOrNull()
+                        ?: 0,
                 distanceFilter = distanceFilterCheckbox.isChecked
         )
 

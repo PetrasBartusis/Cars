@@ -1,6 +1,7 @@
 package com.example.cars.utils.dialog
 
 import android.view.View
+import com.example.cars.utils.dialog.filter.FilterOptions
 
 class ViewDialogBuilder internal constructor() {
     var view: View? = null
