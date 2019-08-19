@@ -1,4 +1,4 @@
-package com.example.cars.utils.dialog.filter
+package com.example.cars.utils.filter
 
 data class FilterOptions(
         var plateNumberFilter: String = "",

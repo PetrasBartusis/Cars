@@ -1,4 +1,4 @@
-package com.example.cars.utils.dialog.filter
+package com.example.cars.utils.filter
 
 import android.content.Context
 import android.util.AttributeSet
