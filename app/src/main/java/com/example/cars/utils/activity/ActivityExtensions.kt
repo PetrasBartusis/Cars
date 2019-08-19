@@ -4,7 +4,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.FragmentActivity
 import com.example.cars.MainActivity
-import com.example.cars.utils.dialog.FilterLayout
+import com.example.cars.utils.filter.FilterLayout
 import com.example.cars.utils.dialog.ViewDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 
