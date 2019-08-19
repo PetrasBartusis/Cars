@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/ic_map"
+        android:title="@string/car_map_menu_text"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/carListFragment"
+        android:icon="@drawable/ic_view_list"
+        android:title="@string/car_list_menu_text"
+        app:showAsAction="ifRoom" />
+
+</menu>

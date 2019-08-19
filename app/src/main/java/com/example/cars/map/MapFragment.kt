@@ -7,6 +7,7 @@ import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.cars.R
+import com.example.cars.utils.activity.openDrawer
 import com.example.cars.utils.activity.showMessage
 import com.example.cars.utils.fragment.BaseFragment
 import com.example.cars.utils.permissions.PermissionChecker
